@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>Keyflow — Typing Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="topbar">
+            <a class="brand" href="#" aria-label="Keyflow home">
+                <span class="brand-mark" aria-hidden="true">k</span>
+                <span>keyflow</span>
+            </a>
+            <span class="top-note"><span class="live-dot"></span> Your daily typing space</span>
+        </header>
+
+        <section class="practice" aria-labelledby="page-title">
+            <div class="intro">
+                <p class="eyebrow">A LITTLE PRACTICE GOES A LONG WAY</p>
+                <h1 id="page-title">Find your <span>flow.</span></h1>
+                <p class="subtitle">A calmer way to get faster, one keystroke at a time.</p>
+            </div>
+
+            <section class="test-card" aria-label="Typing test">
+                <div class="test-toolbar">
+                    <div class="mode-label"><span class="keyboard-icon" aria-hidden="true">⌨</span> TYPING TEST</div>
+                    <div class="toolbar-actions">
+                        <label class="duration-picker" for="duration">
+                            <span class="sr-only">Test duration</span>
+                            <select id="duration" aria-label="Test duration">
+                                <option value="30">30 sec</option>
+                                <option value="60" selected>60 sec</option>
+                                <option value="120">120 sec</option>
+                            </select>
+                        </label>
+                        <button class="icon-button" id="restart" type="button" aria-label="Restart test" title="Restart test (Tab)">
+                            <span aria-hidden="true">↻</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="stats" aria-live="polite">
+                    <div class="stat">
+                        <span class="stat-label">TIME</span>
+                        <span class="stat-value" id="time">60<span class="stat-unit">s</span></span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">WPM</span>
+                        <span class="stat-value" id="wpm">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">ACCURACY</span>
+                        <span class="stat-value" id="accuracy">100<span class="stat-unit">%</span></span>
+                    </div>
+                    <div class="stat stat-progress">
+                        <span class="stat-label">PROGRESS</span>
+                        <span class="progress-track"><span id="progress"></span></span>
+                    </div>
+                </div>
+
+                <section class="result-card" id="result" aria-live="polite" hidden>
+                    <div class="result-heading">
+                        <span class="result-icon" aria-hidden="true">✓</span>
+                        <div>
+                            <p class="result-kicker">TEST COMPLETE</p>
+                            <h2>Your score</h2>
+                        </div>
+                    </div>
+                    <div class="result-metrics">
+                        <div class="result-primary">
+                            <span class="result-number" id="final-wpm">0</span>
+                            <span class="result-unit">WPM</span>
+                        </div>
+                        <div class="result-detail">
+                            <span class="result-label">ACCURACY</span>
+                            <strong id="final-accuracy">100%</strong>
+                        </div>
+                        <div class="result-detail">
+                            <span class="result-label">CORRECT CHARACTERS</span>
+                            <strong id="final-correct">0</strong>
+                        </div>
+                    </div>
+                    <p class="result-message" id="result-message">Nice work. Every practice session counts.</p>
+                </section>
+
+                <div class="passage-wrap" id="passage-wrap">
+                    <p class="passage" id="passage" aria-hidden="true"></p>
+                    <span class="sr-only" id="passage-description">Type the passage shown above in the typing area below.</span>
+                </div>
+                <label class="sr-only" for="typing-input">Type the passage shown above</label>
+                <textarea id="typing-input" class="typing-input" rows="2" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="Click here and start typing..." aria-describedby="passage-description"></textarea>
+
+                <div class="test-footer">
+                    <span id="hint"><kbd>Tab</kbd> + <kbd>Enter</kbd> to restart</span>
+                    <button class="text-button" id="new-passage" type="button">New passage <span aria-hidden="true">→</span></button>
+                </div>
+            </section>
+
+            <p class="footer-note">No pressure. Just you, the keys, and a little progress.</p>
+        </section>
+    </main>
+    <script src="typing.js"></script>
+</body>
+</html>
