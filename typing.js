@@ -4,7 +4,17 @@
         "A quiet morning can make the whole day feel different. The light comes in slowly, the kettle begins to sing, and there is just enough time to gather your thoughts before the world gets busy.",
         "Somewhere beyond the trees, a train moved steadily through the valley. In its windows, travelers watched the fields roll by and carried their own small stories toward the next station.",
         "Good ideas rarely arrive all at once. They grow from curious questions, patient experiments, and the courage to try again when the first answer is not quite right.",
-        "On the weekend, we packed a picnic and followed the winding path beside the river. By afternoon, the clouds had cleared, and the water shimmered like a ribbon in the sun."
+        "On the weekend, we packed a picnic and followed the winding path beside the river. By afternoon, the clouds had cleared, and the water shimmered like a ribbon in the sun.",
+        "A well-made cup of coffee is a small daily ritual. Measure the beans, warm the mug, and give the water a moment to bring out every rich and bright note.",
+        "The old library stood at the end of a quiet street, its tall windows glowing warmly at dusk. Inside, every shelf held a door to somewhere new.",
+        "When the rain finally stopped, the garden smelled of fresh earth and green leaves. Tiny drops clung to the flowers, catching the last light of the afternoon.",
+        "Maya kept a notebook for passing thoughts, quick sketches, and questions she wanted to explore. Over time, those scattered notes became the start of something wonderful.",
+        "A bicycle is a simple invitation to slow down and look around. Take the longer route, notice the changing trees, and let the fresh air clear your mind.",
+        "The little bakery opened before sunrise, filling the corner with the scent of warm bread. Neighbors stopped by for a loaf and stayed to share the day's news.",
+        "Learning to play a song takes patience. First find the rhythm, then practice the tricky part, and soon your hands will remember what your mind once had to think through.",
+        "At the edge of the harbor, boats rocked gently against their ropes. Seagulls circled overhead while the first sunlight spread across the calm blue water.",
+        "A thoughtful message can brighten an ordinary day. Take a moment to tell someone you appreciate them, and make kindness part of your routine.",
+        "The mountain trail curved through a forest of tall pines. Each step brought a new view, and the quiet made every distant birdcall seem close."
     ];
 
     const passageEl = document.querySelector("#passage");
